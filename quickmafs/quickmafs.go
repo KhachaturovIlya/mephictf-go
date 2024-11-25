@@ -8,24 +8,27 @@ var (
 
 // Adds two integers.
 func Add(a, b int) int {
-	return 0
+	return a + b
 }
 
 // Subtracts b from a.
 func Sub(a, b int) int {
-	return 0
+	return a - b
 }
 
 // Multiplies two integers.
 func Mult(a, b int) int {
-	return 0
+	return a * b
 }
 
 // Divides a by b.
 //
 // Returns ErrDivByZero if b is zero.
 func Div(a, b int) (int, error) {
-	return 0, errors.New("not implemented")
+	if b == 0 {
+
+	}
+	return a / b, errors.New("not implemented")
 }
 
 // Returns first count primes.
